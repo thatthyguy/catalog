@@ -1,10 +1,12 @@
 import os, sys
 
-# To start, let's just list every file in a directory
+def full_file_listing(directory):
+    for f in os.listdir(directory):
+        if ".pdf" in f:
+            print os.path.join(directory, f)
 
-directory = str(sys.argv[1])
-print "Listing files now..."
+if __name__ == '__main__':
 
-for f in os.listdir(directory):
-    if ".pdf" in f:
-        print os.path.join(directory, f)
+    directory = str(sys.argv[1])
+    print "Listing files now..."
+    full_file_listing(directory)
