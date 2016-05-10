@@ -6,4 +6,5 @@ directory = str(sys.argv[1])
 print "Listing files now..."
 
 for f in os.listdir(directory):
-    print f
+    if ".pdf" in f:
+        print f
