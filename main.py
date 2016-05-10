@@ -7,4 +7,4 @@ print "Listing files now..."
 
 for f in os.listdir(directory):
     if ".pdf" in f:
-        print f
+        print os.path.join(directory, f)
