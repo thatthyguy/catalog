@@ -32,3 +32,15 @@ def create_table():
 
     conn.commit()
     cur.close()
+
+def insert_document(pdf):
+    # insert the PDF's information into the databse
+
+    conn = sql3.connect('catalog.db')
+    cur = conn.cursor()
+
+    cur.execute(''' ''')
+
+    conn.commit()
+    cur.close()
+
